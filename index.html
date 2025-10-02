@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clasificador de números</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Clasificador de números 1, 2 y 5</h1>
+
+    <div class="controls">
+      <button id="startCam">📷 Iniciar Cámara</button>
+      <button id="stopCam">❌ Detener Cámara</button>
+    </div>
+
+    <video id="video" autoplay playsinline muted></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <h2>Resultados</h2>
+    <table id="resultados">
+      <thead>
+        <tr><th>Clase</th><th>Confianza</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</body>
+</html>
